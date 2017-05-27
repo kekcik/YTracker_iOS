@@ -11,7 +11,6 @@
 		2C58A0F21ED9E35D000FF8FD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0EF1ED9E35D000FF8FD /* Alamofire.framework */; };
 		2C58A0F31ED9E35D000FF8FD /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0F01ED9E35D000FF8FD /* Material.framework */; };
 		2C58A0F41ED9E35D000FF8FD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0F11ED9E35D000FF8FD /* SwiftyJSON.framework */; };
-		2C80E8231EDA00D20029A4D5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C80E8221EDA00D20029A4D5 /* TestViewController.swift */; };
 		2C8989481ECF49D5003CEEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8989471ECF49D4003CEEF0 /* AppDelegate.swift */; };
 		2C89894A1ECF49D5003CEEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8989491ECF49D5003CEEF0 /* ViewController.swift */; };
 		2C89894D1ECF49D5003CEEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89894B1ECF49D5003CEEF0 /* Main.storyboard */; };
@@ -29,7 +28,6 @@
 		2C58A0EF1ED9E35D000FF8FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		2C58A0F01ED9E35D000FF8FD /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/Material/Material.framework"; sourceTree = "<group>"; };
 		2C58A0F11ED9E35D000FF8FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		2C80E8221EDA00D20029A4D5 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2C8989441ECF49D4003CEEF0 /* YTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8989471ECF49D4003CEEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8989491ECF49D5003CEEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				2C8989531ECF49D5003CEEF0 /* Info.plist */,
 				2CDD0CDB1ED4B9F70036A3AE /* RegisterViewController.swift */,
 				2C58A0ED1ED9E290000FF8FD /* AccountManager.swift */,
-				2C80E8221EDA00D20029A4D5 /* TestViewController.swift */,
 			);
 			path = YTracker;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C80E8231EDA00D20029A4D5 /* TestViewController.swift in Sources */,
 				2CDD0CDC1ED4B9F70036A3AE /* RegisterViewController.swift in Sources */,
 				2C89894A1ECF49D5003CEEF0 /* ViewController.swift in Sources */,
 				2C8989481ECF49D5003CEEF0 /* AppDelegate.swift in Sources */,

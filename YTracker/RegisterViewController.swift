@@ -22,9 +22,11 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     @IBOutlet weak var underButtonConstrain: NSLayoutConstraint!
     @IBOutlet weak var underStackConstrain: NSLayoutConstraint!
     fileprivate var undoButton: FlatButton!
-
+    var deviceSize = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        deviceSize = Int(self.view.frame.height)
+
         setConstrains()
         presets()
         registerSignUpNotification()
@@ -42,9 +44,7 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
         pw2TextField.resignFirstResponder()
         
         if (validateFileds()) {
-            let snackbar = TTGSnackbar.init(message: "Какое-то поле заполнено неправильно", duration: .middle, actionText: "Понятно") { (snackbar) -> Void in
-                NSLog("Click action!")
-            }
+            let snackbar = TTGSnackbar.init(message: "Какое-то поле заполнено неправильно", duration: .middle, actionText: "Понятно") { (snackbar) -> Void in }
             snackbar.animationType = .slideFromTopBackToTop
             snackbar.show()
         } else {
@@ -64,7 +64,7 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     
     func validateFileds() -> Bool {
         var flag = false
-        flag = !flag ? setDetailFor(textField: nameTextField, arg: (nameTextField.text == ""), det: "Неправильный логин") : true
+        flag = setDetailFor(textField: nameTextField, arg: (nameTextField.text == ""), det: "Неправильный логин")
         flag = !flag ? setDetailFor(textField: phoneTextField, arg: (phoneTextField.text == ""), det: "Неправильный формат номера") : true
         flag = !flag ? setDetailFor(textField: pwTextField, arg: (pwTextField.text!.characters.count == 0), det: "Неправильный пароль") : true
         flag = !flag ? setDetailFor(textField: pw2TextField, arg: (pw2TextField.text != pwTextField.text), det: "Пароли не совпадают") : true
@@ -78,9 +78,7 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     }
     
     func failRegister(notification: Notification) {
-        let snackbar = TTGSnackbar.init(message: "Что-то пошло не так", duration: .middle, actionText: "Понятно") { (snackbar) -> Void in
-            NSLog("Click action!")
-        }
+        let snackbar = TTGSnackbar.init(message: "Что-то пошло не так", duration: .middle, actionText: "Понятно") { (snackbar) -> Void in }
         snackbar.animationType = .slideFromTopBackToTop
         snackbar.show()
     }
@@ -90,7 +88,6 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     }
     
     func validationPhoneError(notification: Notification) {
-        print("aaa")
         phoneTextField.detail = "Этот телефон уже используется"
     }
 }
@@ -105,11 +102,23 @@ extension RegisterViewController {
         
     }
     func setConstrains() {
-        
-        underStackConstrain.constant = 40
-        underButtonConstrain.constant = 60
-        loginTitleHeight.constant = 330
-        stackViewWithFields.spacing = CGFloat(42)
+        print(deviceSize)
+        switch deviceSize {
+        case 568:
+            //iphone 5
+            break
+        case 667:
+            //iphone 6
+            break
+        case 736:
+            underStackConstrain.constant = 40
+            underButtonConstrain.constant = 60
+            loginTitleHeight.constant = 330
+            stackViewWithFields.spacing = CGFloat(42)
+            break
+        default:
+            print("undetected devices")
+        }
     }
 }
 

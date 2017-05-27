@@ -25,7 +25,7 @@ class AccountManager {
             if let jsonServer = response.result.value {
                 let json = JSON(jsonServer)
                 let code = json["result_code"].int!
-                print(code)
+                print("user.register_auth -> \(code)")
                 switch code {
                 case 0 :
                     NotificationCenter.default.post(name: NSNotification.Name("registerSuccess"), object: json["token"].string)
