@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C58A0EE1ED9E290000FF8FD /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58A0ED1ED9E290000FF8FD /* AccountManager.swift */; };
+		2C58A0F21ED9E35D000FF8FD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0EF1ED9E35D000FF8FD /* Alamofire.framework */; };
+		2C58A0F31ED9E35D000FF8FD /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0F01ED9E35D000FF8FD /* Material.framework */; };
+		2C58A0F41ED9E35D000FF8FD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58A0F11ED9E35D000FF8FD /* SwiftyJSON.framework */; };
+		2C80E8231EDA00D20029A4D5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C80E8221EDA00D20029A4D5 /* TestViewController.swift */; };
 		2C8989481ECF49D5003CEEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8989471ECF49D4003CEEF0 /* AppDelegate.swift */; };
 		2C89894A1ECF49D5003CEEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8989491ECF49D5003CEEF0 /* ViewController.swift */; };
 		2C89894D1ECF49D5003CEEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89894B1ECF49D5003CEEF0 /* Main.storyboard */; };
 		2C89894F1ECF49D5003CEEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C89894E1ECF49D5003CEEF0 /* Assets.xcassets */; };
 		2C8989521ECF49D5003CEEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8989501ECF49D5003CEEF0 /* LaunchScreen.storyboard */; };
+		2C89895B1ECF4A10003CEEF0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C89895A1ECF4A10003CEEF0 /* MapKit.framework */; };
+		2CDD0CDC1ED4B9F70036A3AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD0CDB1ED4B9F70036A3AE /* RegisterViewController.swift */; };
+		5741EEA54B34B66DEB9CA8F2 /* Pods_YTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C014E7B44E6165A9C80B07 /* Pods_YTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02FEC7B976A5DDD440747B3D /* Pods-YTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTracker/Pods-YTracker.release.xcconfig"; sourceTree = "<group>"; };
+		0EA40A06E8BC74A00AFF9A30 /* Pods-YTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTracker/Pods-YTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		2C58A0ED1ED9E290000FF8FD /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		2C58A0EF1ED9E35D000FF8FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		2C58A0F01ED9E35D000FF8FD /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/Material/Material.framework"; sourceTree = "<group>"; };
+		2C58A0F11ED9E35D000FF8FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/YTracker-bvqscbqaevmgatgbeaxqfakcehph/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		2C80E8221EDA00D20029A4D5 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2C8989441ECF49D4003CEEF0 /* YTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8989471ECF49D4003CEEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8989491ECF49D5003CEEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,9 @@
 		2C89894E1ECF49D5003CEEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8989511ECF49D5003CEEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8989531ECF49D5003CEEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C89895A1ECF4A10003CEEF0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2CDD0CDB1ED4B9F70036A3AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A7C014E7B44E6165A9C80B07 /* Pods_YTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C58A0F21ED9E35D000FF8FD /* Alamofire.framework in Frameworks */,
+				2C58A0F31ED9E35D000FF8FD /* Material.framework in Frameworks */,
+				2C58A0F41ED9E35D000FF8FD /* SwiftyJSON.framework in Frameworks */,
+				2C89895B1ECF4A10003CEEF0 /* MapKit.framework in Frameworks */,
+				5741EEA54B34B66DEB9CA8F2 /* Pods_YTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,8 @@
 			children = (
 				2C8989461ECF49D4003CEEF0 /* YTracker */,
 				2C8989451ECF49D4003CEEF0 /* Products */,
+				2C8989591ECF4A10003CEEF0 /* Frameworks */,
+				AB928883965402B69A110D05 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +85,32 @@
 				2C89894E1ECF49D5003CEEF0 /* Assets.xcassets */,
 				2C8989501ECF49D5003CEEF0 /* LaunchScreen.storyboard */,
 				2C8989531ECF49D5003CEEF0 /* Info.plist */,
+				2CDD0CDB1ED4B9F70036A3AE /* RegisterViewController.swift */,
+				2C58A0ED1ED9E290000FF8FD /* AccountManager.swift */,
+				2C80E8221EDA00D20029A4D5 /* TestViewController.swift */,
 			);
 			path = YTracker;
+			sourceTree = "<group>";
+		};
+		2C8989591ECF4A10003CEEF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C58A0EF1ED9E35D000FF8FD /* Alamofire.framework */,
+				2C58A0F01ED9E35D000FF8FD /* Material.framework */,
+				2C58A0F11ED9E35D000FF8FD /* SwiftyJSON.framework */,
+				2C89895A1ECF4A10003CEEF0 /* MapKit.framework */,
+				A7C014E7B44E6165A9C80B07 /* Pods_YTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB928883965402B69A110D05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EA40A06E8BC74A00AFF9A30 /* Pods-YTracker.debug.xcconfig */,
+				02FEC7B976A5DDD440747B3D /* Pods-YTracker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C8989561ECF49D5003CEEF0 /* Build configuration list for PBXNativeTarget "YTracker" */;
 			buildPhases = (
+				57DAEE8705FD5CD88DEAB9E8 /* [CP] Check Pods Manifest.lock */,
 				2C8989401ECF49D4003CEEF0 /* Sources */,
 				2C8989411ECF49D4003CEEF0 /* Frameworks */,
 				2C8989421ECF49D4003CEEF0 /* Resources */,
+				0F22DD9D557948A20AF7887D /* [CP] Embed Pods Frameworks */,
+				CA3D6CD34EFEAEEC78BB23FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +148,13 @@
 				TargetAttributes = {
 					2C8989431ECF49D4003CEEF0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B5SWW93MKD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,13 +189,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F22DD9D557948A20AF7887D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTracker/Pods-YTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57DAEE8705FD5CD88DEAB9E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3D6CD34EFEAEEC78BB23FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTracker/Pods-YTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C8989401ECF49D4003CEEF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C80E8231EDA00D20029A4D5 /* TestViewController.swift in Sources */,
+				2CDD0CDC1ED4B9F70036A3AE /* RegisterViewController.swift in Sources */,
 				2C89894A1ECF49D5003CEEF0 /* ViewController.swift in Sources */,
 				2C8989481ECF49D5003CEEF0 /* AppDelegate.swift in Sources */,
+				2C58A0EE1ED9E290000FF8FD /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +367,12 @@
 		};
 		2C8989571ECF49D5003CEEF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA40A06E8BC74A00AFF9A30 /* Pods-YTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B5SWW93MKD;
 				INFOPLIST_FILE = YTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Trofimov.YTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +382,12 @@
 		};
 		2C8989581ECF49D5003CEEF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FEC7B976A5DDD440747B3D /* Pods-YTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B5SWW93MKD;
 				INFOPLIST_FILE = YTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Trofimov.YTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +414,7 @@
 				2C8989581ECF49D5003CEEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
