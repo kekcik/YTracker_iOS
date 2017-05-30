@@ -59,7 +59,8 @@ class ClusteredZone {
     }
 }
 
-class ViewController: UIViewController, MKMapViewDelegate {
+
+class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -99,38 +100,34 @@ class ViewController: UIViewController, MKMapViewDelegate {
         }
         
         for dx in -3 ... 4 {
-            for dy in -5 ... 6 {
+            for dy in -5...6 {
                 let annotation = MKPointAnnotation()
-                
+
                 let rect = CGRect(
-                    x: mapView.visibleMapRect.origin.x - startX + x / 2 + deltaX * Double(dx),
-                    y: mapView.visibleMapRect.origin.y - startY + y / 2 + deltaY * Double(dy),
-                    width: deltaX,
-                    height: deltaY)
+                        x: mapView.visibleMapRect.origin.x - startX + x / 2 + deltaX * Double(dx),
+                        y: mapView.visibleMapRect.origin.y - startY + y / 2 + deltaY * Double(dy),
+                        width: deltaX,
+                        height: deltaY)
                 let chto = ClusteredZone(rect)
 
                 for annotation in annotations.filter({ (an) -> Bool in
                     return rect.contains(CGPoint(
-                        x: MKMapPointForCoordinate(an.coordinate).x,
-                        y: MKMapPointForCoordinate(an.coordinate).y
+                            x: MKMapPointForCoordinate(an.coordinate).x,
+                            y: MKMapPointForCoordinate(an.coordinate).y
                     ))
                 }) {
                     chto.addAnnotation(annotation)
                 }
 
                 let coord = CLLocationCoordinate2D(
-                    latitude: chto.getMidX(),
-                    longitude: chto.getMidY()
+                        latitude: chto.getMidX(),
+                        longitude: chto.getMidY()
                 )
-                
+
                 annotation.title = "union for \(chto.getAmount()) points"
                 annotation.coordinate = coord
                 mapView.addAnnotation(annotation)
             }
         }
-        
-//        
-        
-
     }
 }

@@ -10,8 +10,8 @@ import UIKit
 import Material
 import Foundation
 import TTGSnackbar
-class RegisterViewController: UIViewController, TextFieldDelegate {
 
+class RegisterViewController: UIViewController, TextFieldDelegate {
     @IBOutlet weak var loginTitleHeight: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nameTextField: TextField!
@@ -44,7 +44,8 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
         pw2TextField.resignFirstResponder()
         
         if (validateFileds()) {
-            let snackbar = TTGSnackbar.init(message: "Какое-то поле заполнено неправильно", duration: .middle, actionText: "Понятно") { (snackbar) -> Void in }
+            let snackbar = TTGSnackbar.init(message: "Какое-то поле заполнено неправильно",
+                    duration: .middle, actionText: "Понятно") { (snackbar) -> Void in }
             snackbar.animationType = .slideFromTopBackToTop
             snackbar.show()
         } else {
@@ -64,10 +65,10 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     
     func validateFileds() -> Bool {
         var flag = false
-        flag = setDetailFor(textField: nameTextField, arg: (nameTextField.text == ""), det: "Неправильный логин")
-        flag = !flag ? setDetailFor(textField: phoneTextField, arg: (phoneTextField.text == ""), det: "Неправильный формат номера") : true
-        flag = !flag ? setDetailFor(textField: pwTextField, arg: (pwTextField.text!.characters.count == 0), det: "Неправильный пароль") : true
-        flag = !flag ? setDetailFor(textField: pw2TextField, arg: (pw2TextField.text != pwTextField.text), det: "Пароли не совпадают") : true
+        flag = flag && setDetailFor(textField: nameTextField, arg: (nameTextField.text == ""), det: "Неправильный логин")
+        flag = flag && setDetailFor(textField: phoneTextField, arg: (phoneTextField.text == ""), det: "Неправильный формат номера")
+        flag = flag && setDetailFor(textField: pwTextField, arg: (pwTextField.text!.characters.count == 0), det: "Неправильный пароль")
+        flag = flag && setDetailFor(textField: pw2TextField, arg: (pw2TextField.text != pwTextField.text), det: "Пароли не совпадают")
         return flag
     }
     
@@ -84,7 +85,8 @@ class RegisterViewController: UIViewController, TextFieldDelegate {
     }
     
     func successRegister(notification: Notification) {
-        print(notification.object as! String)
+        //print(notification.object as! String)
+        print(AccountManager.sh.currentToken)
     }
     
     func validationPhoneError(notification: Notification) {
